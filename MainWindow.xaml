@@ -14,14 +14,88 @@
     <Grid Background="Black">
 
 
-        <Image HorizontalAlignment="Left" Height="498" Margin="-146,0,-51,0" VerticalAlignment="Top" Width="849" Source="images/smallroom.png" Stretch="Fill"/>
-        <Icons:Exit Visibility="Visible" x:Name="Exit" HorizontalAlignment="Left" Height="30" Margin="622,0,0,0" VerticalAlignment="Top" Width="30" Background="#4C4B4B4B" MouseEnter="Exit_MouseEnter"/>
-        <Icons:BiggerExit Visibility="Hidden" x:Name="BiggerExit" HorizontalAlignment="Left" Height="30" Margin="622,0,0,0" VerticalAlignment="Top" Width="30" Background="#4C4B4B4B" PreviewMouseLeftButtonDown="Exit_PreviewMouseLeftButtonDown" MouseLeave="Exit_MouseLeave"/>
-        <Border BorderThickness="1" HorizontalAlignment="Left" Height="151" Margin="24,308,0,0" VerticalAlignment="Top" Width="272">
-            <Label x:Name="startgame" Content="Start" FontFamily="/Launcher;component/fonts/#League Gothic" FontSize="55" Foreground="#FFE6E6E6" Margin="1,-1,150,83" MouseEnter="Label_MouseEnter" MouseLeave="startgame_MouseLeave" RenderTransformOrigin="0.5,0.5"/>
-        </Border>
-        <Icons:Hide Visibility="Visible" x:Name="Hide" HorizontalAlignment="Left" Height="30" Margin="592,0,0,0" VerticalAlignment="Top" Width="30" Background="#4C4B4B4B" MouseEnter="Hide_MouseEnter"/>
-        <Icons:BiggerHide Visibility="Hidden" x:Name="BiggerHide" HorizontalAlignment="Left" Height="30" Margin="592,0,0,0" VerticalAlignment="Top" Width="30" Background="#4C4B4B4B" MouseLeave="Hide_MouseLeave" PreviewMouseLeftButtonDown="BiggerHide_PreviewMouseLeftButtonDown"/>
+
+        <Image 
+            HorizontalAlignment="Left"
+            Height="498"
+            Margin="-146,0,-51,0"
+            VerticalAlignment="Top"
+            Width="849"
+            Source="images/smallroom.png"
+            Stretch="Fill"/>
+        
+        <Icons:Exit
+            Visibility="Visible"
+            x:Name="Exit"
+            HorizontalAlignment="Left"
+            Height="30" 
+            Margin="622,0,0,0"
+            VerticalAlignment="Top"
+            Width="30" 
+            Background="#4C4B4B4B"
+            MouseEnter="Exit_MouseEnter"/>
+        
+        <Icons:BiggerExit 
+            Visibility="Hidden" 
+            x:Name="BiggerExit"
+            HorizontalAlignment="Left"
+            Height="30"
+            Margin="622,0,0,0" 
+            VerticalAlignment="Top"
+            Width="30"
+            Background="#4C4B4B4B"
+            PreviewMouseLeftButtonDown="Exit_PreviewMouseLeftButtonDown"
+            MouseLeave="Exit_MouseLeave"/>
+        <Label 
+            x:Name="startgame"
+            Content="Start" 
+            FontFamily="/Launcher;component/fonts/#League Gothic"
+            FontSize="55"
+            Foreground="#FFE6E6E6"
+            Margin="139,209,390,212"
+            MouseEnter="Label_MouseEnter"
+            MouseLeave="startgame_MouseLeave" 
+            RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="9.689"/>
+                    <RotateTransform Angle="-0.432"/>
+                    <TranslateTransform Y="9.272" X="0.007"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Icons:Hide 
+            Visibility="Visible" 
+            x:Name="Hide"
+            HorizontalAlignment="Left"
+            Height="30"
+            Margin="592,0,0,0"
+            VerticalAlignment="Top" 
+            Width="30"
+            Background="#4C4B4B4B"
+            MouseEnter="Hide_MouseEnter"/>
+        <Icons:BiggerHide 
+            Visibility="Hidden"
+            x:Name="BiggerHide"
+            HorizontalAlignment="Left"
+            Height="30"
+            Margin="592,0,0,0" 
+            VerticalAlignment="Top"
+            Width="30" 
+            Background="#4C4B4B4B"
+            MouseLeave="Hide_MouseLeave"
+            PreviewMouseLeftButtonDown="BiggerHide_PreviewMouseLeftButtonDown"/>
+        <Label x:Name="exitgame" Content="EXIT" FontFamily="/Launcher;component/fonts/#League Gothic" FontSize="24" Foreground="#FFE6E6E6" Margin="390,251,198,136" MouseEnter="Exit_enter" MouseLeave="Exit_leave" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-10.28"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-11.134"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
 
 
     </Grid>

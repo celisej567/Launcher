@@ -25,6 +25,9 @@ namespace Launcher
     /// </summary>
     public partial class MainWindow : Window
     {
+
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -39,37 +42,9 @@ namespace Launcher
         private void Label_MouseEnter(object sender, MouseEventArgs e)
         {
             this.startgame.Foreground = new SolidColorBrush(Color.FromArgb(255, 164, 164, 164));
-            Random rnd = new Random();
-            int sound = rnd.Next(0, 20);
-            UnmanagedMemoryStream[] rndsong =
-            {
-                Properties.Resources._1,
-                Properties.Resources._2,
-                Properties.Resources._3,
-                Properties.Resources._4,
-                Properties.Resources._5,
-                Properties.Resources._6,
-                Properties.Resources._7,
-                Properties.Resources._8,
-                Properties.Resources._9,
-                Properties.Resources._10,
-                Properties.Resources._11,
-                Properties.Resources._12,
-                Properties.Resources._13,
-                Properties.Resources._13,
-                Properties.Resources._14,
-                Properties.Resources._15,
-                Properties.Resources._17,
-                Properties.Resources._18,
-                Properties.Resources._19,
-                Properties.Resources._20,
-                Properties.Resources._21
-            };
-            SoundPlayer sp = new SoundPlayer(rndsong[sound]);
-            
-            sp.Play();
-            
-           
+
+
+            RandomSound();
 
 
         }
@@ -106,6 +81,54 @@ namespace Launcher
         {
             this.Hide.Visibility = Visibility.Visible;
             this.BiggerHide.Visibility = Visibility.Hidden;
+        }
+
+        private void Exit_enter(object sender, MouseEventArgs e)
+        {
+            
+            this.exitgame.Foreground = new SolidColorBrush(Color.FromArgb(255, 164, 164, 164));
+            RandomSound();
+             
+        }
+
+        private void Exit_leave(object sender, MouseEventArgs e)
+        {
+            this.exitgame.Foreground = new SolidColorBrush(Color.FromArgb(255, 230, 230, 230));
+        }
+
+
+
+        public void RandomSound()
+        {
+            Random rnd = new Random();
+            int sound = rnd.Next(0, 20);
+            UnmanagedMemoryStream[] rndsong =
+            {
+                Properties.Resources._1,
+                Properties.Resources._2,
+                Properties.Resources._3,
+                Properties.Resources._4,
+                Properties.Resources._5,
+                Properties.Resources._6,
+                Properties.Resources._7,
+                Properties.Resources._8,
+                Properties.Resources._9,
+                Properties.Resources._10,
+                Properties.Resources._11,
+                Properties.Resources._12,
+                Properties.Resources._13,
+                Properties.Resources._13,
+                Properties.Resources._14,
+                Properties.Resources._15,
+                Properties.Resources._17,
+                Properties.Resources._18,
+                Properties.Resources._19,
+                Properties.Resources._20,
+                Properties.Resources._21
+            };
+            SoundPlayer sp = new SoundPlayer(rndsong[sound]);
+
+            sp.PlaySync();
         }
     }
 }

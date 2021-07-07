@@ -1,0 +1,25 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Launcher"
+        xmlns:Icons="clr-namespace:Launcher.Icons" x:Class="Launcher.MainWindow"
+        mc:Ignorable="d"
+        Title="Launcher "
+        Height="498.258" 
+        Width="651.609"
+        ResizeMode="NoResize"
+        WindowStyle="None">
+    <Grid Background="Black">
+
+
+        <Image HorizontalAlignment="Left" Height="498" Margin="-76,0,-51,0" VerticalAlignment="Top" Width="779" Source="images/smallroom.png" Stretch="Fill"/>
+        <Icons:Exit HorizontalAlignment="Left" Height="30" Margin="622,0,0,0" VerticalAlignment="Top" Width="30" Background="#4C4B4B4B" PreviewMouseLeftButtonDown="Exit_PreviewMouseLeftButtonDown"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="70" Margin="24,308,0,0" VerticalAlignment="Top" Width="272">
+            <Label x:Name="startgame" Content="Start" FontFamily="/Launcher;component/fonts/#League Gothic" FontSize="48" Foreground="#FFE6E6E6" Margin="1,-1,167,11" MouseEnter="Label_MouseEnter" MouseLeave="startgame_MouseLeave"/>
+        </Border>
+
+
+    </Grid>
+</Window>

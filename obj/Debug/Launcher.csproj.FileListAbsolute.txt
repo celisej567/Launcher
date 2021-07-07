@@ -16,3 +16,9 @@ F:\C#\Launcher\Launcher\obj\Debug\Launcher.csproj.CoreCompileInputs.cache
 F:\C#\Launcher\Launcher\obj\Debug\Launcher.exe
 F:\C#\Launcher\Launcher\obj\Debug\Launcher.pdb
 F:\C#\Launcher\Launcher\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\C#\Launcher\Launcher\obj\Debug\Icons\bigger\BiggerExit.g.cs
+F:\C#\Launcher\Launcher\obj\Debug\Icons\bigger\BiggerExit.baml
+F:\C#\Launcher\Launcher\obj\Debug\Icons\bigger\BiggerHide.g.cs
+F:\C#\Launcher\Launcher\obj\Debug\Icons\Hide.g.cs
+F:\C#\Launcher\Launcher\obj\Debug\Icons\bigger\BiggerHide.baml
+F:\C#\Launcher\Launcher\obj\Debug\Icons\Hide.baml

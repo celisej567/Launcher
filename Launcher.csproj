@@ -55,6 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Icons\bigger\BiggerExit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icons\bigger\BiggerHide.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Icons\Hide.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Icons\Exit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -69,6 +81,15 @@
     </Compile>
     <Compile Include="classes\TimerTick.cs" />
     <Compile Include="classes\WinResize.cs" />
+    <Compile Include="Icons\bigger\BiggerExit.xaml.cs">
+      <DependentUpon>BiggerExit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icons\bigger\BiggerHide.xaml.cs">
+      <DependentUpon>BiggerHide.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Icons\Hide.xaml.cs">
+      <DependentUpon>Hide.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Icons\Exit.xaml.cs">
       <DependentUpon>Exit.xaml</DependentUpon>
     </Compile>
@@ -107,6 +128,83 @@
   <ItemGroup>
     <Resource Include="images\smallroom.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ui_menu_click_05.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_hover_01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_hover_02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_hover_03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_hover_04.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_hover_05.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_hover_06.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_hover_07.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_hover_08.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_hover_09.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UI_Numpad_A_01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UI_Numpad_A_02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UI_Numpad_A_03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UI_Numpad_A_04.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UI_Numpad_Affirm.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UI_Numpad_B.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UI_Numpad_Deny.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_wife_messagecomplete.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_wife_messageincoming.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_change_01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_change_02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_change_03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_click_01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_click_02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_click_03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_menu_click_04.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

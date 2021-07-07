@@ -14,11 +14,14 @@
     <Grid Background="Black">
 
 
-        <Image HorizontalAlignment="Left" Height="498" Margin="-76,0,-51,0" VerticalAlignment="Top" Width="779" Source="images/smallroom.png" Stretch="Fill"/>
-        <Icons:Exit HorizontalAlignment="Left" Height="30" Margin="622,0,0,0" VerticalAlignment="Top" Width="30" Background="#4C4B4B4B" PreviewMouseLeftButtonDown="Exit_PreviewMouseLeftButtonDown"/>
-        <Border BorderThickness="1" HorizontalAlignment="Left" Height="70" Margin="24,308,0,0" VerticalAlignment="Top" Width="272">
-            <Label x:Name="startgame" Content="Start" FontFamily="/Launcher;component/fonts/#League Gothic" FontSize="48" Foreground="#FFE6E6E6" Margin="1,-1,167,11" MouseEnter="Label_MouseEnter" MouseLeave="startgame_MouseLeave"/>
+        <Image HorizontalAlignment="Left" Height="498" Margin="-146,0,-51,0" VerticalAlignment="Top" Width="849" Source="images/smallroom.png" Stretch="Fill"/>
+        <Icons:Exit Visibility="Visible" x:Name="Exit" HorizontalAlignment="Left" Height="30" Margin="622,0,0,0" VerticalAlignment="Top" Width="30" Background="#4C4B4B4B" MouseEnter="Exit_MouseEnter"/>
+        <Icons:BiggerExit Visibility="Hidden" x:Name="BiggerExit" HorizontalAlignment="Left" Height="30" Margin="622,0,0,0" VerticalAlignment="Top" Width="30" Background="#4C4B4B4B" PreviewMouseLeftButtonDown="Exit_PreviewMouseLeftButtonDown" MouseLeave="Exit_MouseLeave"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="151" Margin="24,308,0,0" VerticalAlignment="Top" Width="272">
+            <Label x:Name="startgame" Content="Start" FontFamily="/Launcher;component/fonts/#League Gothic" FontSize="55" Foreground="#FFE6E6E6" Margin="1,-1,150,83" MouseEnter="Label_MouseEnter" MouseLeave="startgame_MouseLeave" RenderTransformOrigin="0.5,0.5"/>
         </Border>
+        <Icons:Hide Visibility="Visible" x:Name="Hide" HorizontalAlignment="Left" Height="30" Margin="592,0,0,0" VerticalAlignment="Top" Width="30" Background="#4C4B4B4B" MouseEnter="Hide_MouseEnter"/>
+        <Icons:BiggerHide Visibility="Hidden" x:Name="BiggerHide" HorizontalAlignment="Left" Height="30" Margin="592,0,0,0" VerticalAlignment="Top" Width="30" Background="#4C4B4B4B" MouseLeave="Hide_MouseLeave" PreviewMouseLeftButtonDown="BiggerHide_PreviewMouseLeftButtonDown"/>
 
 
     </Grid>

@@ -80,6 +80,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="classes\TimerTick.cs" />
+    <Compile Include="classes\TSPButton.cs" />
     <Compile Include="classes\WinResize.cs" />
     <Compile Include="Icons\bigger\BiggerExit.xaml.cs">
       <DependentUpon>BiggerExit.xaml</DependentUpon>

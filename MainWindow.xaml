@@ -10,7 +10,8 @@
         Height="498.258" 
         Width="651.609"
         ResizeMode="NoResize"
-        WindowStyle="None">
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen">
     <Grid Background="Black">
 
 

@@ -127,8 +127,11 @@ namespace Launcher
                 Properties.Resources._21
             };
             SoundPlayer sp = new SoundPlayer(rndsong[sound]);
+            
+            sp.Play();
 
-            sp.PlaySync();
+
         }
+
     }
 }
